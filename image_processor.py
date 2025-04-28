@@ -193,8 +193,8 @@ def detect_aruco(
                             (int(topLeft[0]) - 30, int(topLeft[1]) - 30),
                             cv2.FONT_HERSHEY_SIMPLEX,
                             0.5,
-                            (0, 255, 255),
-                            1,
+                            (255, 100, 100),
+                            2,
                         )
                         cv2.putText(
                             frame,
@@ -202,8 +202,8 @@ def detect_aruco(
                             (int(topLeft[0]) - 30, int(topLeft[1]) - 10),
                             cv2.FONT_HERSHEY_SIMPLEX,
                             0.5,
-                            (0, 255, 255),
-                            1,
+                            (255, 100, 100),
+                            2,
                         )
 
                 except cv2.error as e:

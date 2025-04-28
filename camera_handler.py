@@ -36,7 +36,7 @@ if __name__ == '__main__':
     import config
     try:
         cam_handler = CameraHandler(
-            config.CAMERA_INDEX,
+            config.DEFAULT_CAMERA_INDEX,
             config.FRAME_WIDTH,
             config.FRAME_HEIGHT,
             config.FRAME_RATE,

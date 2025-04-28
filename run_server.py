@@ -1,28 +1,10 @@
-# run_server.py
 import time
 import config
 from camera_handler import CameraHandler
 from udp_sender import UdpSender
 
-# import pymycobot # MyCobot 사용 시 주석 해제
-# from packaging import version # MyCobot 사용 시 주석 해제
-
-# MyCobot 버전 확인 및 클래스 임포트 (MyCobot 사용 시)
-# if version.parse(pymycobot.__version__) >= version.parse("3.6.0"):
-#     from pymycobot import MyCobot280 as MyCobot
-# else:
-#     from pymycobot import MyCobot
-
 
 def main():
-    # MyCobot 초기화 (필요시)
-    # try:
-    #     mycobot = MyCobot("/dev/ttyJETCOBOT", 1000000)
-    #     print("MyCobot 초기화 완료")
-    # except Exception as e:
-    #     print(f"MyCobot 초기화 실패: {e}")
-    #     mycobot = None # MyCobot 없이 진행
-
     try:
         cam_handler = CameraHandler(
             config.UDP_CAMERA_INDEX,
